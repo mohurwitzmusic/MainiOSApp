@@ -14,6 +14,8 @@
 		D15B32AC24BBE8DB00C8E973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15B32AB24BBE8DB00C8E973 /* Assets.xcassets */; };
 		D15B32AF24BBE8DB00C8E973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15B32AD24BBE8DB00C8E973 /* LaunchScreen.storyboard */; };
 		D15B32BA24BBE8DB00C8E973 /* MainiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B32B924BBE8DB00C8E973 /* MainiOSAppTests.swift */; };
+		D15B32CF24BBE91A00C8E973 /* MyFrameowrk1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15B32CE24BBE91A00C8E973 /* MyFrameowrk1.framework */; };
+		D15B32D024BBE91A00C8E973 /* MyFrameowrk1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D15B32CE24BBE91A00C8E973 /* MyFrameowrk1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 			remoteInfo = MainiOSApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D15B32D124BBE91A00C8E973 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D15B32D024BBE91A00C8E973 /* MyFrameowrk1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D15B329F24BBE8DA00C8E973 /* MainiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +54,7 @@
 		D15B32B524BBE8DB00C8E973 /* MainiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15B32B924BBE8DB00C8E973 /* MainiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainiOSAppTests.swift; sourceTree = "<group>"; };
 		D15B32BB24BBE8DB00C8E973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15B32CE24BBE91A00C8E973 /* MyFrameowrk1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyFrameowrk1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15B32CF24BBE91A00C8E973 /* MyFrameowrk1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +82,7 @@
 				D15B32A124BBE8DA00C8E973 /* MainiOSApp */,
 				D15B32B824BBE8DB00C8E973 /* MainiOSAppTests */,
 				D15B32A024BBE8DA00C8E973 /* Products */,
+				D15B32CD24BBE91A00C8E973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,14 @@
 			path = MainiOSAppTests;
 			sourceTree = "<group>";
 		};
+		D15B32CD24BBE91A00C8E973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D15B32CE24BBE91A00C8E973 /* MyFrameowrk1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +136,7 @@
 				D15B329B24BBE8DA00C8E973 /* Sources */,
 				D15B329C24BBE8DA00C8E973 /* Frameworks */,
 				D15B329D24BBE8DA00C8E973 /* Resources */,
+				D15B32D124BBE91A00C8E973 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
